@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @SpringBootApplication
 public class CustomerApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(CustomerApplication.class, args);
     }

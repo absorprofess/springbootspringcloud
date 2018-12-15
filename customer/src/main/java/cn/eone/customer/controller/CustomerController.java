@@ -19,9 +19,9 @@ public class CustomerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("/")
-    public String index() {
-        String result = restTemplate.getForObject("http://ticket-provider/", String.class);
+    @RequestMapping("/getInfo")
+    public String getInfo() {
+        String result = restTemplate.getForObject("http://ticket-provider/getInfo", String.class);
         return result;
     }
 }

@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
  **/
 
 @Service
-public class TicketService {
+public class ProviderService {
 
-    public String buyTicket(){
+    public String getInfo() {
         return "远程调用成功!";
     }
 }

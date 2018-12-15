@@ -1,6 +1,6 @@
 package cn.eone.provider.controller;
 
-import cn.eone.provider.service.TicketService;
+import cn.eone.provider.service.ProviderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 
 @RestController
-public class TicketController {
+public class ProviderController {
 
     @Autowired
-    private TicketService ticketService;
+    private ProviderService providerService;
 
-    @RequestMapping("/")
-    public String index() {
-        return ticketService.buyTicket();
+    @RequestMapping("/getInfo")
+    public String getInfo() {
+        return providerService.getInfo();
     }
 }
